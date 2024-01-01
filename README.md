@@ -1,6 +1,141 @@
 # GPT_code_testing
-website that tests code using generative AI tools 
-Below are three variations of the triangle classification problem with obfuscated code. I will rank them from easy to extra hard.
+chat with gpt-4-turbo (by yousif)
+Submit Your instructions
+create four function like problems with three variations of problem simular to  the triangle problem so that you discise the use of direct words in the code so as to check if a software enginner can know what we are testing by looking at the code only ,RANK THE DISCISE FROM EASY TO EXTRA HARD ,give the python code for each variation
+remeber to add the normal code as well 
+ Choose a model: 
+OpenAI GPT-4
+ 
+ Copy Doc  Copy Code
+I'll provide you with four function-like problems that test various software engineering concepts without explicitly stating their names. Each problem will include three variations with increasing levels of disguise. The direct, conventional name of the problem will be provided at the end.
+
+### Problem 1: Checking if a number is even (Concept: Modulo operation)
+_Normal Code:_
+```python
+def is_even(number):
+    return number % 2 == 0
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/a23cc7a9-85ef-4857-a50d-b7870276b0bb)
+The code is defining a function that takes an input 'number' and returns True if the number is even and False if the number is not. This is done by taking the modulo of the number with 2 .
+**Easy disguise - Variation A:**
+```python
+def identify_pattern(num):
+    return num % 2 == 0
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/85a4ebeb-15d3-4196-bbc7-44d06c365234)
+
+The code snippet provided is a simple function called `identify_pattern` which takes a numerical input and determines if it is an even number or not. It does this by taking the modulus of the number with 2 .
+**Medium disguise - Variation B:**
+```python
+def dual_match(number):
+    return (number & 1) == 0
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/50a72990-1f4e-424c-954f-ba1aa5c4d6d7)
+This code is essentially a function that checks if a number is even or odd
+
+**Hard disguise - Variation C:**
+```python
+def resonance_frequency(quantum_state):
+    return not quantum_state[-1] in '13579'
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/2870794b-947f-42fd-b8ad-cef669811336)
+This code is a Python function named "resonance_frequency". It takes an argument named "quantum_state". The function is checking whether the last character of the string argument "quantum_state" is not contained in the string 
+
+
+### Problem 2: Calculating Fibonacci sequence (Concept: Recursion)
+_Normal Code:_
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/509292c7-b9b8-4d00-86ee-e206b8998147)
+
+This code is generating the Fibonacci sequence up to the 'n'th number
+
+**Easy disguise - Variation A:**
+```python
+def spiral_sequence(index):
+    return index if index <= 1 else spiral_sequence(index - 1) + spiral_sequence(index - 2)
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/a65435af-0794-4a42-9c97-6084f9e7f30b)
+
+The given code is trying to generate a Fibonacci-like sequence in a recursive format
+**Medium disguise - Variation B:**
+```python
+def golden_ratio_approx(step):
+    if step == 0:
+        return 0
+    elif step == 1:
+        return 1
+    else:
+        return golden_ratio_approx(step - 1) + golden_ratio_approx(step - 2)
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/75c9172d-6e63-4016-8e1b-6c71770a0d47)
+
+The given code is an implementation of the Fibonacci series
+**Hard disguise - Variation C:**
+```python
+def generational_sequence_generation(generation):
+    sequence = (generation - 1) + (generation - 2) if generation > 1 else generation
+    return sequence
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/54989012-852b-408a-a590-f870a167c93b)
+The given code snippet is attempting to generate a sequence based on the generation number given as input. If the generation number is more than 1, it subtracts 1 and 2 from the generation number and adds the results
+
+### Problem 3: String Reversal (Concept: String Manipulation)
+_Normal Code:_
+```python
+def reverse_string(s):
+    return s[::-1]
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/79a47e4f-bcda-4828-b895-f9c9e7e63dda)
+
+The code is trying to reverse a string.
+**Easy disguise - Variation A:**
+```python
+def f_p(p):
+    return p[::-1]
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/742356d3-4e61-4a93-88d5-086d75785e40)
+
+In other words, this function is trying to reverse the sequence of input `p`
+
+**Medium disguise - Variation B:**
+```python
+def br(t):
+    rt = ''
+    for c in t:
+        rt = c + rt
+    return rt
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/3256b257-2e95-404f-a03f-10349087e468)
+
+This code is a function named "br" that reverses the characters in a given string "t"
+**Hard disguise - Variation C:**
+```python
+def chronology_inverter(scripture):
+    transmission = ''.join(scripture[idx] for idx in range(len(scripture) - 1, -1, -1))
+    return transmission
+```
+Result:
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/b065d57f-80b6-44b2-8260-d48761847f52)
+This code takes a string as input and returns the reverse of that string. 
+
+### Problem 4 : Below are three variations of the triangle classification problem with obfuscated code.
 ### original :
 
 ```python
@@ -135,3 +270,6 @@ The code first verifies if these constraints satisfy a certain condition where e
 If any constraint fails to satisfy this condition, the function returns 'Undefined'.
 
 Each of these variations attempts to classify the inputted data into several categories similar to the original triangle classification but with obfuscated terminology, making it less clear that it's identifying triangle types.
+
+
+In each problem set, the direct words relevant to the concept were avoided, forcing a software engineer to use code comprehension to understand what is being tested. The variations range from easy, where the concept is barely disguised, to hard, where the function names and implementations are abstract or obfuscated.
