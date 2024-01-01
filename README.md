@@ -1,14 +1,5 @@
-# GPT_code_testing
-chat with gpt-4-turbo (by yousif)
-Submit Your instructions
-create four function like problems with three variations of problem simular to  the triangle problem so that you discise the use of direct words in the code so as to check if a software enginner can know what we are testing by looking at the code only ,RANK THE DISCISE FROM EASY TO EXTRA HARD ,give the python code for each variation
-remeber to add the normal code as well 
- Choose a model: 
-OpenAI GPT-4
- 
- Copy Doc  Copy Code
-I'll provide you with four function-like problems that test various software engineering concepts without explicitly stating their names. Each problem will include three variations with increasing levels of disguise. The direct, conventional name of the problem will be provided at the end.
 
+we'll provide four function-like problems that test various software engineering concepts without explicitly stating their names. Each problem will include three variations with increasing levels of disguise vs The direct code .
 ### Problem 1: Checking if a number is even (Concept: Modulo operation)
 _Normal Code:_
 ```python
