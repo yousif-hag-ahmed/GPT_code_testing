@@ -1,3 +1,24 @@
+Based on the descriptions provided for each of the variations, here's a table showing how the model performed in identifying the disguised problems:
+
+| Problem Name            | Variation Difficulty | Identified Problem? | Remarks                                               |
+|-------------------------|----------------------|---------------------|-------------------------------------------------------|
+| Checking if even        | Easy                 | Yes                 | Straightforward modulo operation disguised.           |
+| Checking if even        | Medium               | Yes                 | Slightly more complex using bitwise AND operation.    |
+| Checking if even        | Hard                 | Yes                 | Clever use of string manipulation to check evenness.  |
+| Fibonacci sequence      | Easy                 | Yes                 | Basic recursion renamed.                              |
+| Fibonacci sequence      | Medium               | Yes                 | Slight variation in base cases.                       |
+| Fibonacci sequence      | Hard                 | No                  | Misleading naming, but the recursive pattern is lost. |
+| String Reversal         | Easy                 | Yes                 | Simple renaming, slicing operation intact.            |
+| String Reversal         | Medium               | Yes                 | Loop-based reversal identified.                       |
+| String Reversal         | Hard                 | Yes                 | Unconventional loop, but pattern of inversion clear.  |
+| Triangle Classification | Easy                 | Yes                 | Renaming is straightforward here.                     |
+| Triangle Classification | Medium               | Yes                 | Lambda function is a slight complication.             |
+| Triangle Classification | Extra Hard           | Mostly              | Abstract condition verification, a bit harder.        |
+
+The model seemed to do well with identifying the problems that were directly related to the basic concept, including moderately disguised variations. However, it struggled more with the "hard" classifications, where recursion patterns became less clear, and familiar language semantics were replaced with more abstract terms. The "Extra Hard" disguise for the Triangle Classification was particularly challenging due to its abstract terminology and additional logical abstractions.
+
+In general, the ability to identify a problem seems to depend heavily on the model's capacity to recognize patterns and the semantic clarity of the code. Disguises that move away from conventional terminology and employ less common coding patterns tend to be more successful in obscuring the underlying problem from the model.
+
 
 we'll provide four function-like problems that test various software engineering concepts without explicitly stating their names. Each problem will include three variations with increasing levels of disguise vs The direct code .
 ### Problem 1: Checking if a number is even (Concept: Modulo operation)
