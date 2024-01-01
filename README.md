@@ -1,4 +1,6 @@
+### Intorduction:
 
+we'll provide four function-like problems that test various software engineering concepts without explicitly stating their names. Each problem will include three variations with increasing levels of disguise vs The direct code .
 
 | Problem Name            | Variation Difficulty | Identified Problem? | Remarks                                               |
 |-------------------------|----------------------|---------------------|-------------------------------------------------------|
