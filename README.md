@@ -2,6 +2,33 @@
 website that tests code using generative AI tools 
 Below are three variations of the triangle classification problem with obfuscated code. I will rank them from easy to extra hard.
 ### original :
+
+```python
+
+def classify_triangle(a, b, c):
+    """
+    Classify a triangle based on the lengths of its sides.
+    :param a: Length of side a
+    :param b: Length of side b
+    :param c: Length of side c
+    :return: Type of triangle or 'Invalid' if not a triangle
+    """
+    # Check for a valid triangle first
+    if a + b <= c or a + c <= b or b + c <= a:
+        return "Invalid"
+
+    # Check for equilateral triangle
+    if a == b == c:
+        return "Equilateral"
+
+    # Check for isosceles triangle (two sides equal)
+    if a == b or a == c or b == c:
+        return "Isosceles"
+
+    # If none of the above, it's a scalene triangle
+    return "Scalene"
+```
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/3ffbf751-fea3-47ce-ae7c-0d61e5d77c70)
 
 The provided code is used to classify a triangle based on the lengths of its sides
