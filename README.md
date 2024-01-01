@@ -1,4 +1,4 @@
-Based on the descriptions provided for each of the variations, here's a table showing how the model performed in identifying the disguised problems:
+
 
 | Problem Name            | Variation Difficulty | Identified Problem? | Remarks                                               |
 |-------------------------|----------------------|---------------------|-------------------------------------------------------|
@@ -13,7 +13,7 @@ Based on the descriptions provided for each of the variations, here's a table sh
 | String Reversal         | Hard                 | Yes                 | Unconventional loop, but pattern of inversion clear.  |
 | Triangle Classification | Easy                 | Yes                 | Renaming is straightforward here.                     |
 | Triangle Classification | Medium               | Yes                 | Lambda function is a slight complication.             |
-| Triangle Classification | Extra Hard           | Mostly              | Abstract condition verification, a bit harder.        |
+| Triangle Classification | Extra Hard           | NO                  | Abstract condition verification, a bit harder.        |
 
 The model seemed to do well with identifying the problems that were directly related to the basic concept, including moderately disguised variations. However, it struggled more with the "hard" classifications, where recursion patterns became less clear, and familiar language semantics were replaced with more abstract terms. The "Extra Hard" disguise for the Triangle Classification was particularly challenging due to its abstract terminology and additional logical abstractions.
 
@@ -284,8 +284,7 @@ def evaluate_polygon(s1, s2, s3):
 Result:
 
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/5deaef31-e240-47ce-b83c-76c8ee906de5)
-This code is trying to evaluate and classify a polygon based on the measurements of its three sides. If the sum of any two sides is not greater than the third side, then the polygon is invalid, and the function will return
-
+The given code is evaluating a given polygon with three sides i.e., a triangle .
 ### Variation 3: Extra Hard Disguise
 
 ```python
@@ -319,15 +318,17 @@ def examine_structure(p1, p2, p3):
 
 Result:
 
-![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/31da84f0-c65a-4c99-b89a-b61941680f34)
+![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/268237f6-e308-414a-b350-056c61b4fe0e)
 
-The given code defines a function `examine_structure` that examines a structure with three constraints (p1, p2, and p3). 
+The function 'examine_structure' identifies and categorizes a flat structure based on three provided constraints given as parameters (p1, p2, p3). Firstly, it verifies if each constraint is less than the sum of the other two constraints. If they do not meet this criteria, the function will immediately return 'Undefined'.
 
-The code first verifies if these constraints satisfy a certain condition where each individual constraint (dimension) is less than the sum of all other constraints (dimensions).
+The function then checks the uniqueness of the constraints by converting them into a set (which only contains unique elements) and counting the length of this set. The function uses this information to categorize the structure:
+- If all constraints are identical (i.e. length of the set is 1), the function describes the structure as 'consistent'.
+- If two constraints are identical (i.e. length of the set is 2), the function describes the structure as 'coupled'.
+- If all constraints are unique (i.e. length of the set is 3), the function describes the structure as 'distinct'.
 
-If any constraint fails to satisfy this condition, the function returns 'Undefined'.
-
-Each of these variations attempts to classify the inputted data into several categories similar to the original triangle classification but with obfuscated terminology, making it less clear that it's identifying triangle types.
+Lastly, if the constraints do not meet any of these criteria, the function will return 'Undefined' again.
 
 
+### Conclusion:
 In each problem set, the direct words relevant to the concept were avoided, forcing a software engineer to use code comprehension to understand what is being tested. The variations range from easy, where the concept is barely disguised, to hard, where the function names and implementations are abstract or obfuscated.
