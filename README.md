@@ -9,7 +9,9 @@ def is_even(number):
 Result:
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/a23cc7a9-85ef-4857-a50d-b7870276b0bb)
 The code is defining a function that takes an input 'number' and returns True if the number is even and False if the number is not. This is done by taking the modulo of the number with 2 .
+
 **Easy disguise - Variation A:**
+
 ```python
 def identify_pattern(num):
     return num % 2 == 0
@@ -18,7 +20,9 @@ Result:
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/85a4ebeb-15d3-4196-bbc7-44d06c365234)
 
 The code snippet provided is a simple function called `identify_pattern` which takes a numerical input and determines if it is an even number or not. It does this by taking the modulus of the number with 2 .
+
 **Medium disguise - Variation B:**
+
 ```python
 def dual_match(number):
     return (number & 1) == 0
@@ -28,7 +32,9 @@ Result:
 This code is essentially a function that checks if a number is even or odd
 
 **Hard disguise - Variation C:**
+
 ```python
+
 def resonance_frequency(quantum_state):
     return not quantum_state[-1] in '13579'
 ```
@@ -38,6 +44,8 @@ This code is a Python function named "resonance_frequency". It takes an argument
 
 
 ### Problem 2: Calculating Fibonacci sequence (Concept: Recursion)
+
+
 _Normal Code:_
 ```python
 def fibonacci(n):
@@ -52,6 +60,8 @@ Result:
 This code is generating the Fibonacci sequence up to the 'n'th number
 
 **Easy disguise - Variation A:**
+
+
 ```python
 def spiral_sequence(index):
     return index if index <= 1 else spiral_sequence(index - 1) + spiral_sequence(index - 2)
@@ -60,7 +70,9 @@ Result:
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/a65435af-0794-4a42-9c97-6084f9e7f30b)
 
 The given code is trying to generate a Fibonacci-like sequence in a recursive format
+
 **Medium disguise - Variation B:**
+
 ```python
 def golden_ratio_approx(step):
     if step == 0:
@@ -70,31 +82,44 @@ def golden_ratio_approx(step):
     else:
         return golden_ratio_approx(step - 1) + golden_ratio_approx(step - 2)
 ```
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/75c9172d-6e63-4016-8e1b-6c71770a0d47)
 
 The given code is an implementation of the Fibonacci series
+
 **Hard disguise - Variation C:**
+
 ```python
 def generational_sequence_generation(generation):
     sequence = (generation - 1) + (generation - 2) if generation > 1 else generation
     return sequence
 ```
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/54989012-852b-408a-a590-f870a167c93b)
 The given code snippet is attempting to generate a sequence based on the generation number given as input. If the generation number is more than 1, it subtracts 1 and 2 from the generation number and adds the results
 
 ### Problem 3: String Reversal (Concept: String Manipulation)
+
 _Normal Code:_
+
 ```python
 def reverse_string(s):
     return s[::-1]
 ```
+
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/79a47e4f-bcda-4828-b895-f9c9e7e63dda)
 
 The code is trying to reverse a string.
+
 **Easy disguise - Variation A:**
+
 ```python
 def f_p(p):
     return p[::-1]
@@ -112,22 +137,30 @@ def br(t):
         rt = c + rt
     return rt
 ```
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/3256b257-2e95-404f-a03f-10349087e468)
 
 This code is a function named "br" that reverses the characters in a given string "t"
+
 **Hard disguise - Variation C:**
+
 ```python
 def chronology_inverter(scripture):
     transmission = ''.join(scripture[idx] for idx in range(len(scripture) - 1, -1, -1))
     return transmission
 ```
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/b065d57f-80b6-44b2-8260-d48761847f52)
 This code takes a string as input and returns the reverse of that string. 
 
 ### Problem 4 : Below are three variations of the triangle classification problem with obfuscated code.
+
 ### original :
+
 
 ```python
 
@@ -158,8 +191,12 @@ def classify_triangle(a, b, c):
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/3ffbf751-fea3-47ce-ae7c-0d61e5d77c70)
 
 The provided code is used to classify a triangle based on the lengths of its sides
+
+
 ### Variation 1: Easy Disguise
+
 ```python
+
 def classify_shape(x, y, z):
     """
     Determine the type of a three-sided shape.
@@ -180,8 +217,11 @@ def classify_shape(x, y, z):
     return "All different"
 ```
 
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/13bc7a98-76a1-4d06-a69a-b67fd43a4aec)
+
 This function `classify_shape` takes three parameters, x, y, and z, which represent the lengths of three edges of a shape. The function is meant to classify the type of a three-sided shape based on the lengths of the edges.
 
 First, the function checks if the input lengths constitute a valid shape (triangle inequality). If any combination of two edge lengths is not greater than the third edge length, then it returns "Not a shape".
@@ -196,6 +236,7 @@ The last part of the code counting the equal sides (`equal_sides = sum([s1 == s2
 
 
 ### Variation 2: Medium Disguise
+
 ```python
 def evaluate_polygon(s1, s2, s3):
     """
@@ -218,10 +259,14 @@ def evaluate_polygon(s1, s2, s3):
 
     return "Diverse"
 ```
+
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/5deaef31-e240-47ce-b83c-76c8ee906de5)
-This code is trying to evaluate and classify a polygon based on the measurements of its three sides. If the sum of any two sides is not greater than the third side, then the polygon is invalid, and the function will return "Non
+This code is trying to evaluate and classify a polygon based on the measurements of its three sides. If the sum of any two sides is not greater than the third side, then the polygon is invalid, and the function will return
+
 ### Variation 3: Extra Hard Disguise
+
 ```python
 def examine_structure(p1, p2, p3):
     """
@@ -252,6 +297,7 @@ def examine_structure(p1, p2, p3):
 ```
 
 Result:
+
 ![image](https://github.com/yousif-hag-ahmed/GPT_code_testing/assets/69925471/31da84f0-c65a-4c99-b89a-b61941680f34)
 
 The given code defines a function `examine_structure` that examines a structure with three constraints (p1, p2, and p3). 
