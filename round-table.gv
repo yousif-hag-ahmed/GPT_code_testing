@@ -1,0 +1,22 @@
+// The Round Table
+digraph {
+	A [label=Start]
+	B [label="Initialize Flask App"]
+	C [label="Define Routes"]
+	D [label="User Submits Code"]
+	E [label="Extract Function from GPT-4 Response"]
+	F [label="Execute Extracted Function"]
+	G [label="Generate CFG from Description"]
+	H [label="Draw and Save CFG Image"]
+	I [label="Render Template with Results"]
+	J [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+}

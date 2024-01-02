@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Quality assurance (Fall 2023)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 16px; /* Increased base font size for better readability */
+        }
+        .container {
+            max-width: 95%; /* Increased width for mobile */
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            font-size: 1.5em; /* Larger heading */
+        }
+        form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            font-size: 1em; /* Larger font size for readability */
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background: #555;
+        }
+        .results, .graph {
+            text-align: left;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 600px) {
+            /* Additional styling for smaller screens */
+            body {
+                font-size: 18px; /* Even larger font size for mobile devices */
+            }
+            .container {
+                max-width: 100%;
+                padding: 0 10px; /* Added padding for better edge spacing */
+            }
+            textarea {
+                height: 250px; /* Larger text area for easier interaction */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Software Quality assurance (Fall 2023)</h1>
+        <h2>Submit Your Code for Path Testing</h2>
+        <form action="/test-path" method="post">
+            <textarea name="code" placeholder="Enter your code here">{{ request.form.code if request.form.code else '' }}</textarea>
+            <br>
+            <input type="submit" value="Test Path">
+        </form>
+        {% if graph_image %}
+            <div class="graph">
+                <h2>Control Flow Graph:</h2>
+                <img src="/static/cfg.png" alt="Control Flow Graph">
+            </div>
+        {% endif %}
+
+        <!-- Results Section -->
+        {% if test_results %}
+            <div class="results">
+                <h2>Test Results:</h2>
+                <pre>{{ test_results }}</pre>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
